@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<style> 
+  body {
+
+  background-image: url(001.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#333;
+}
+  li{
+    float: left;
+
+  }
+
+  li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition:  all 1s;
+  }
+  li a:hover {
+    width: 130px;
+    background-color: rgb(199, 33, 214);
+    
+  }
+  li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(157, 42, 185);
+}
+
+li.dropdown {
+  display: inline-block;
+} 
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(177, 70, 70, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 40px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: rgb(157, 42, 185);}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+div.test {
+  white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden; 
+  border: 1px solid #000000;
+}
+
+div.test:hover {
+  overflow: visible;
+}
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* 定位工具提示 */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* 创建并排的三个非等列 */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 响应式布局 - 创建堆叠而非并排的三列 */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<ul>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Home</a>
+      <div class="dropdown-content">
+        <a href="#">首页</a>
+        <a href="#">个人中心</a>
+        <a href="#">喜欢</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(1)" class="dropbtn">News</a>
+      <div class="dropdown-content">
+        <a href="#">评论</a>
+        <a href="#">私信</a>
+        <a href="#">公告</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(2)" class="dropbtn">Favorite</a>
+      <div class="dropdown-content">
+        <a href="#">收藏夹1</a>
+        <a href="#">收藏夹2</a>
+        <a href="#">收藏夹3</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(3)" class="dropbtn">History</a>
+      <div class="dropdown-content">
+        <a href="#">最近浏览1</a>
+        <a href="#">最近浏览2</a>
+        <a href="#">最近浏览3</a>
+      </div>
+    </li>
+</ul>
+
+<div class="row">
+  <div class="column">
+    <div class="tooltip">
+      <div class="test" style="text-overflow:ellipsis;">
+      <h1>文本阴影效果，请把鼠标移到我上面</h1>
+      <span class="tooltiptext">工具提示效果</span>
+      </div>
+    </div>
+    <p>使用了过渡，背景，阴影文字效果，网站布局，导航栏，下拉菜单，文本效果等放大缩小浏览器以观看布局，请调整浏览器窗口的大小以查看响应效果。</p>
+  
+  </div>
+  
+  <div class="column">
+    <div class="tooltip">
+      <div class="test" style="text-overflow:ellipsis;">
+      <h1>文本阴影效果，请把鼠标移到我上面</h1>
+      <span class="tooltiptext">工具提示效果</span>
+      </div>
+    </div>
+    <p>使用了过渡，背景，阴影文字效果，网站布局，导航栏，下拉菜单，文本效果等放大缩小浏览器以观看布局，请调整浏览器窗口的大小以查看响应效果。</p>
+  </div>
+  
+  <div class="column">
+    <div class="tooltip">
+      <div class="test" style="text-overflow:ellipsis;">
+      <h1>文本阴影效果，请把鼠标移到我上面</h1>
+      <span class="tooltiptext">工具提示效果</span>
+      </div>
+    </div>
+    <p>使用了过渡，背景，阴影文字效果，网站布局，导航栏，下拉菜单，文本效果等放大缩小浏览器以观看布局，请调整浏览器窗口的大小以查看响应效果。</p>
+  </div>
+</div>
+
+
+</body>
+</html>
